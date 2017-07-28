@@ -1,11 +1,13 @@
 {
   "name": "react-filtergram",
   "version": "0.1.0",
-	"description": "React FilterGramm by Ilya Kulikov",
+  "description": "React FilterGramm by Ilya Kulikov",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-input-range": "^1.2.1",
+    "react-rangeslider": "^2.1.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.10"
