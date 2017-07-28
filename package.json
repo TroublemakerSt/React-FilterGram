@@ -1,6 +1,7 @@
 {
   "name": "react-filtergram",
   "version": "0.1.0",
+	"description": "React FilterGramm by Ilya Kulikov",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
