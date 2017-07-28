@@ -75,3 +75,32 @@
     background-size: cover;
     background-position: center;
 }
+
+.filter-list {
+    display: flex;
+    width: 100%;
+    height: calc(15% - 10px);
+    background: #353535;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.filter-list .filter {
+    flex: 1;
+    margin-right: 20px;
+    background: #353535;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+.filter-list .filter:last-child {
+    margin-right: 0px;
+}
+
+.filter-list .filter:hover {
+    border: 3px solid #cc7a6f;
+}
+
+.filter-list .filter.selected {
+    border: 3px solid #cc7a6f;
+}

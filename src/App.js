@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Settings from './components/Settings';
 import Filter from './components/Filter';
 import Image from './components/Image';
+import ReadyFilterList from './components/ReadyFilterList';
 
 class App extends Component {
 	state = {
@@ -27,6 +28,10 @@ class App extends Component {
       this.setState({ selectedFilter: '', settings });
 	  }
 
+		updateSettings = (selectedFilter, settings) => {
+			this.setState({ selectedFilter, settings });
+		}
+
 
   render() {
 		const { image, selectedFilter, settings } = this.state;
@@ -41,6 +46,13 @@ class App extends Component {
 						<Filter settings={settings}>
                 <Image src={image} />
             </Filter>
+
+						<ReadyFilterList
+	            image={image}
+	            settings={settings}
+	            selectedFilter={selectedFilter}
+	            updateSettings={this.updateSettings}
+						/>
 					</main>
 				</section>
       </div>

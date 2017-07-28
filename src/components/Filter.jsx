@@ -4,18 +4,18 @@ function getFilterCSSStyles(settings) {
     let filterString = '';
 
     for (let prop in settings) {
-        if (settings.hasOwnProperty(prop)) {
-            switch (prop) {
-                case 'hue':
-                    filterString += 'hue-rotate(' + settings[prop] + 'deg) ';
-                    break;
-                default:
-                    filterString += prop + '(' + settings[prop] + '%) ';
-            }
+      if (settings.hasOwnProperty(prop)) {
+        switch (prop) {
+          case 'hue':
+            filterString += 'hue-rotate(' + settings[prop] + 'deg) ';
+            break;
+          default:
+            filterString += prop + '(' + settings[prop] + '%) ';
         }
+      }
     }
 
-    return filterString;
+  return filterString;
 }
 
 const Filter = ({ children, name, settings, selected, onClick = () => {} }) => {

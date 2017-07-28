@@ -22,29 +22,29 @@ const Settings = ({ settings, handleChange }) => {
 				onChange={handleChange}
 		 	/>
 
-					<Range
-						name="brightness"
-						min={0}
-						max={200}
-						value={brightness}
-						onChange={handleChange}
-					/>
+			<Range
+				name="brightness"
+				min={0}
+				max={200}
+				value={brightness}
+				onChange={handleChange}
+			/>
 
-					<Range
-						name="saturate"
-						min={0}
-						max={100}
-						value={saturate}
-						onChange={handleChange}
-					/>
+			<Range
+				name="saturate"
+				min={0}
+				max={100}
+				value={saturate}
+				onChange={handleChange}
+			/>
 
-					<Range
-					 	name="sepia"
-					 	min={0}
-					 	max={100}
-					 	value={sepia}
-					 	onChange={handleChange}
-					/>
+			<Range
+			 	name="sepia"
+			 	min={0}
+			 	max={100}
+			 	value={sepia}
+			 	onChange={handleChange}
+			/>
 		</aside>
 	);
 }
