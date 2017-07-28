@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Settings from './components/Settings';
+import Filter from './components/Filter';
+import Image from './components/Image';
 
 class App extends Component {
 	state = {
@@ -36,7 +38,9 @@ class App extends Component {
 					<Settings settings={settings} handleChange={this.handleChange} />
 
 					<main className="main">
-
+						<Filter settings={settings}>
+                <Image src={image} />
+            </Filter>
 					</main>
 				</section>
       </div>
